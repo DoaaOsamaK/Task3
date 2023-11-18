@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e6d3a7;
+    height: 100%;
+}
+
+.menu-btn {
+    color: #e6d3a7;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: #3a7563;
+    border-radius: 0 0 25px 25%;
+    box-shadow: 0 0 14px rgba(0, 0, 0, .8);
+}
+
+.navbar .logo h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 35px;
+    color: #e6d3a7;
+    border-bottom: 4px solid #392f2f;
+    border-bottom-style: dashed;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #e6d3a7;
+    font-size: 20px;
+}
+
+.navbar .menu li .active {
+    padding: 6px;
+    border: 3px solid #392f2f;
+    border-radius: 25px;
+    background-color: #392f2f;
+}
+
+.navbar .menu li a i {
+    margin-right: 10px;
+    color: #392f2f;
+}
+
+.navbar .menu li a:hover {
+    padding: 6px;
+    border: 3px solid #392f2f;
+    border-radius: 25px;
+    background-color: #392f2f;
+}
+
+/* Add this rule for the shopping icon */
+.navbar .menu li .shopping:hover {
+    border: 3px solid #e6d3a7;
+    background-color: #e6d3a7;
+    border-radius: 25px;
+}
