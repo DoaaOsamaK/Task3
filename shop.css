@@ -6,11 +6,15 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #e6d3a7;
     height: 100%;
     overflow: auto;
 }
-
+.pheading{
+    text-align: center;
+    margin:50px 0;
+    color:#392f2f;
+    }
 .menu-btn {
     color: #e6d3a7;
     position: absolute;
@@ -82,64 +86,24 @@ body {
     background-color: #e6d3a7;
     border-radius: 25px;
 }
-/* content  */
-.content {
-    background-image: url(imgs/back.png);
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Change from flex-start to center */
-    color:#392f2f;
-    height: 100vh;   
-}
-.content h1 {
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .welcome{
+    color: #392f2f;
     margin:20px;
-    font-size: 40px;
-    line-height: 1.2em;
-    letter-spacing: -1px;
-    text-align: left; /* Align to the left */
-}
-
-.content p {
-    font-size: 20px;
-    margin:20px;
-    text-align: left; /* Align to the left */
-}
-
-.content button {
-    margin:30px;
-    padding:15px 30px;
-    background-color: #3a7563;
-    color:#e6d3a7;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    font-family: sans-serif;
-    font-size:20px;
-    cursor: pointer;
-}
-.content button:hover {
-    background-color: #e6d3a7;
-    color:#3a7563;
-    border-radius: 25px 0 25px;
-    font-size:25px;
-}
-.pheading{
-text-align: center;
-margin:50px 0;
-color:#392f2f;
-}
-/* product */
-.sec{
+    font-family:sans-serif;
+  }
+  /* card */
+  .sec{
     padding:10px 5%;
 }
 .product{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 .product .card{
     width:310px;
@@ -227,30 +191,4 @@ color:#392f2f;
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
-  footer{
-    background-color: #3a7563;
-    height:10vh;
-    background-color: #3a7563;
-    border-radius: 25px 25% 0 0 ;
-    box-shadow: 0 0 14px rgba(0, 0, 0, .8);
-  }
-  @font-face {
-    font-family: 'Dancing Script';
-    src: url('DancingScript-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  footer h3 {
-    font-size:35px;
-    display: flex;
-    color: #e6d3a7;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    justify-content: center;
-    font-family: 'Dancing Script', cursive;
-  }
-  
-  
   
