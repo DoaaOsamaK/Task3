@@ -6,14 +6,21 @@
 }
 
 body {
-    background-color: #e6d3a7;
+    background-color: #ecdec0;
     height: 100%;
     overflow: auto;
 }
+@font-face {
+    font-family: 'Agbalumo Script';
+    src: url('Agbalumo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 .pheading{
+    font-family:'Agbalumo Script';
     text-align: center;
     margin:50px 0;
-    color:#392f2f;
+    color:#3a7563;
     }
 .menu-btn {
     color: #e6d3a7;
@@ -92,6 +99,7 @@ body {
     font-weight: normal;
     font-style: normal;
   }
+ 
   .welcome{
     color: #392f2f;
     margin:20px;
@@ -118,9 +126,23 @@ body {
     width:100%;
     
 }
-.product .card .desc{
+.product .card .descc{
     padding:5px 20px;
     opacity:0.8;
+}
+.desc{
+    display: inline-block;
+    margin-left:60px;
+    margin-bottom: 30px;
+    text-align: left;
+    color:#e6d3a7;
+    padding:5px 20px;
+    opacity:0.8;
+    border-radius: 25px 0 25% 0; 
+    background-color: #3a7563;
+    font-size: 25px;
+    padding:8px 18px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
 }
 .product .card .titel{
  font-weight:900;
